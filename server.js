@@ -2,7 +2,7 @@ var http = require('http') // http module
 var fs = require('fs') // file system module
 
 var http200 = fs.readFileSync('./200.html')
-var http204 = fs.readFileSync('./204.html')
+var http207 = fs.readFileSync('./207.html')
 var http418 = fs.readFileSync('./418.html')
 var brewedCoffeeResponse = fs.readFileSync('./coffee.json')
 
@@ -31,8 +31,8 @@ http.createServer(function (request, resource) {
         if (request.method === 'DELETE') {
         // handle a DELETE, return some HTCPCP boilerplate
         console.log("saw a DELETE")
-        resource.writeHead(204, {'Content-Type': 'application/coffee-pot-command'})
-        resource.end(http204)
+        resource.writeHead(207, {'Content-Type': 'application/coffee-pot-command'})
+        resource.end(http207)
     }
 }).listen(8888)
 

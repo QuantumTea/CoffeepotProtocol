@@ -12,13 +12,12 @@ http.createServer(function (request, resource) {
     if (request.method === 'GET') {
         console.log("saw a GET")
         // handle a GET
-        // return some HTCPCP boilerplate
+        // return correctly formed JSON for a coffee
         resource.writeHead(200, {'Content-Type': 'application/coffee-pot-command'})
         resource.end(brewedCoffeeResponse)
     }
     if (request.method === 'POST') {
         // handle a POST / BREW request, these are analogous
-        // return a cup of coffee
         console.log('saw a POST')
         resource.writeHead(200, {'Content-Type': 'message/coffeepot'})
         resource.end(http200)
@@ -30,9 +29,8 @@ http.createServer(function (request, resource) {
         resource.end(http418)
     }
         if (request.method === 'DELETE') {
+        // handle a DELETE, return some HTCPCP boilerplate
         console.log("saw a DELETE")
-        // handle a Delete
-        // return some HTCPCP boilerplate
         resource.writeHead(204, {'Content-Type': 'application/coffee-pot-command'})
         resource.end(http204)
     }

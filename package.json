@@ -1,15 +1,26 @@
 {
   "name": "coffeepotprotocol",
   "version": "1.0.0",
-  "description": "HTCPCP 1.0 implementation in Node.js",
+  "description": "Node implementation of RFC2324",
   "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
-    "test": "ava",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuantumTea/CoffeepotProtocol.git"
+  },
   "keywords": [
-    "coffee"
+    "node",
+    "coffeepot"
   ],
   "author": "Alison Hawke",
-  "license": "ISC"
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/QuantumTea/CoffeepotProtocol/issues"
+  },
+  "homepage": "https://github.com/QuantumTea/CoffeepotProtocol#readme"
 }

@@ -1,0 +1,15 @@
+{
+  "name": "coffeepotprotocol",
+  "version": "1.0.0",
+  "description": "HTCPCP 1.0 implementation in Node.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "ava",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "coffee"
+  ],
+  "author": "Alison Hawke",
+  "license": "ISC"
+}

@@ -1,0 +1,13 @@
+[
+    {
+        "name": "Mocha",
+        "milk-type": "Skim",
+        "syrup-type": "Chocolate",
+        "alcohol-type": "Kahlua"
+    },
+
+    {
+        "name": "Latte",
+        "milk-type": "Skim"
+    }
+]

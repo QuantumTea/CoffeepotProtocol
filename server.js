@@ -29,10 +29,10 @@ http.createServer(function (request, resource) {
         resource.end(http418)
     }
         if (request.method === 'DELETE') {
-        // handle a DELETE, return some HTCPCP boilerplate
+        // handle a DELETE, if you use a 204, nothing gets returned
         console.log("saw a DELETE")
-        resource.writeHead(207, {'Content-Type': 'application/coffee-pot-command'})
-        resource.end(http207)
+        resource.writeHead(204, {'Content-Type': 'application/coffee-pot-command'})
+        resource.end()
     }
 }).listen(8888)
 
